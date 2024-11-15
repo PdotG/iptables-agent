@@ -48,7 +48,7 @@ Run the Agent
 
 Execute the script:
 
-python3 agent.py
+    python3 agent.py
 
 Interact with the Agent
 
@@ -89,7 +89,7 @@ All changes to iptables are logged in iptables_changes.log with timestamps for a
 ## Graceful Shutdown
 
 Use Ctrl+C to terminate the program safely. A signal handler ensures clean shutdown.
-Security Notes
+## Security Notes
 
     Ensure the system running the agent is secure and has minimal exposure to unauthorized users.
     Audit iptables_changes.log regularly to monitor changes.
