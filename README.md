@@ -29,7 +29,7 @@ cd iptables-agent
 Install required Python libraries:
 
 ```bash
-pip -r requierements.txt
+pip -r requirements.txt
 ```
 
 ### 3. Set Up Environment Variables
