@@ -48,7 +48,7 @@ Run the Agent
 
 Execute the script:
 
-python iptables_agent.py
+python3 agent.py
 
 Interact with the Agent
 
