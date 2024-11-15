@@ -28,13 +28,17 @@ cd iptables-agent
 
 Install required Python libraries:
 
+```bash
 pip -r requierements.txt
+```
 
 ### 3. Set Up Environment Variables
 
 Create a .env file in the project root directory and add your OpenAI API key:
 
+```bash
 OPEN_API_KEY=your_openai_api_key
+```
 
 ### 4. Grant Required Permissions
 
