@@ -34,11 +34,13 @@ pip -r requirements.txt
 
 ### 3. Set Up Environment Variables
 
-Create a .env file in the project root directory and add your OpenAI API key:
+Create a .env file in the project root directory and add your API key, and model name if desired:
 
 ```bash
 OPEN_API_KEY=your_openai_api_key
+MODEL_NAME = your_model_name
 ```
+If the name is not specified, the script will use GPT-4o-mini.
 
 ### 4. Grant Required Permissions
 
@@ -48,11 +50,7 @@ Run the Agent
 
 ### 1. Execute the script:
 
-<<<<<<< HEAD
-python agent.py
-=======
-    python3 agent.py
->>>>>>> 37d0d28b72eb68642a66f459bde4605f185862c1
+    python agent.py
 
 ### 2. Interact with the Agent
 
