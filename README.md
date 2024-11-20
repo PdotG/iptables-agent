@@ -29,7 +29,7 @@ cd iptables-agent
 Install required Python libraries:
 
 ```bash
-pip -r requierements.txt
+pip -r requirements.txt
 ```
 
 ### 3. Set Up Environment Variables
@@ -46,11 +46,15 @@ The agent requires sudo privileges to modify iptables. Ensure your user has the 
 ## Usage
 Run the Agent
 
-Execute the script:
+### 1. Execute the script:
 
+<<<<<<< HEAD
 python agent.py
+=======
+    python3 agent.py
+>>>>>>> 37d0d28b72eb68642a66f459bde4605f185862c1
 
-Interact with the Agent
+### 2. Interact with the Agent
 
     Provide input such as:
         Allow HTTP traffic
@@ -61,7 +65,7 @@ Interact with the Agent
         Ask for confirmation before applying changes.
         Log all changes in iptables_changes.log.
 
-Example Workflow
+### 3. Example Workflow
 
     User Input: Allow HTTP traffic
     Agent Response:
@@ -70,7 +74,7 @@ Example Workflow
         Requests confirmation before executing the command.
         Logs the change.
 
-Prompt Details
+### 4. Prompt Details
 
 The agent follows a structured prompt to:
 
@@ -78,7 +82,7 @@ The agent follows a structured prompt to:
     Use tools for listing or modifying rules.
     Provide feedback on actions taken.
 
-Tools Available
+### 5. Tools Available
 
     list_rules: Lists all current rules in iptables.
     modify_rule: Adds or deletes a rule.
@@ -89,7 +93,7 @@ All changes to iptables are logged in iptables_changes.log with timestamps for a
 ## Graceful Shutdown
 
 Use Ctrl+C to terminate the program safely. A signal handler ensures clean shutdown.
-Security Notes
+## Security Notes
 
     Ensure the system running the agent is secure and has minimal exposure to unauthorized users.
     Audit iptables_changes.log regularly to monitor changes.
